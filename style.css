@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-full-matte-background-dark-coffee-color-simple-backgroundfrosted-texturedark-brownsimple-image_79017.jpg);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+position: sticky;
+top: 0;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .hero {
+    background-image: url(https://rare-gallery.com/mocahbig/26297-Drink-Coffee-BeansCoffee-HD-Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+  .menu-item {
+    flex: 1 0 300px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .menu-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .menu-item h2 {
+    margin-top: 10px;
+  }
+
+  .about {
+    background-color: #f9f9f9;
+    padding: 100px 50px;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+
+  footer {
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-full-matte-background-dark-coffee-color-simple-backgroundfrosted-texturedark-brownsimple-image_79017.jpg);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+h1,p{
+color: #807272;
+}
+.a{
+    width: 25px;
+    height: 3px;
+    background-color: rgba(208, 107, 107, 0.908);
+    margin: 7px 0;
+  }
+.bt1{
+  min-width: 150px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #101015;
+  background: #651f1f;
+background: linear-gradient(90deg, rgb(104, 47, 49) 0%, rgb(85, 23, 25) 100%);
+  border: none;
+  border-radius: 500px;
+  box-shadow: 12px 12px 24px rgba(121, 30, 79, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.bt1::before {
+content: '';
+  border-radius: 500px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #6f272e;
+  box-shadow: 0 0 60px rgba(115, 45, 49, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.bt1:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.bt1:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.bt1::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #7f303050;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -30%);
+
+}
+
+.bt1:hover::after, button:focus::after {
+  animation:alternate-reverse;
+  display: none;
+}
